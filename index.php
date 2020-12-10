@@ -5,7 +5,6 @@ $isLastname = true;
 $civility = NULL;
 $firstname = NULL;
 $lastname = NULL;
-
 if ($_POST) //si $_POST contient au moins une donnée, donc TRUE
 {
     if (isset($_POST['civility'])) //Si le paramètre civility existe dans l'URL
@@ -64,11 +63,11 @@ if($_FILES)
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exercice 6 Partie 7</title>
+    <title>Exercice 7 Partie 7</title>
 </head>
 
 <body>
-    <h1>Exercice 6 Partie 7</h1>
+    <h1>Exercice 7 Partie 7</h1>
 
     <?php if ($_POST && $isCivility && $isFirstname && $isLastname) : ?>
         <p><?= 'Hello' . ' ' . $civility . ' ' . $lastname . ' ' . $firstname?></p>
